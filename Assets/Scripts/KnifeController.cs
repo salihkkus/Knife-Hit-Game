@@ -31,6 +31,17 @@ public class KnifeController : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Circle"))
+        {
+            CanShoot = false;
+            kniferb.isKinematic = true;
+            kniferb.constraints = RigidbodyConstraints2D.FreezeAll;
+            transform.SetParent(other.gameObject.transform);
+        }
+    }
+
     private void Shoot()
     {
          if(CanShoot)
