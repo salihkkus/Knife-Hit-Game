@@ -8,7 +8,7 @@ public class KnifeManager : MonoBehaviour
   [SerializeField] private List<GameObject> knifeList = new List<GameObject>();
   [SerializeField] private GameObject knifePrefab;
   [SerializeField] private int knifeCount;
-  private int knifeIndex;
+  private int knifeIndex = 0;
 
     void Start()
     {
@@ -25,6 +25,15 @@ public class KnifeManager : MonoBehaviour
         }
 
         knifeList[0].SetActive(true);
+    }
+
+    public void SetActiveKnife()
+    {
+      if(knifeIndex < knifeCount - 1)
+      {
+        knifeIndex++;
+        knifeList[knifeIndex].SetActive(true);
+      }
     }
 
 }

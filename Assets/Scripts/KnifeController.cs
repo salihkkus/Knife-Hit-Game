@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KnifeController : MonoBehaviour
 {
+    private KnifeManager knifeManager;
    private Rigidbody2D kniferb;
    [SerializeField] private float movespeed;
    private bool CanShoot;
@@ -35,6 +36,7 @@ public class KnifeController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Circle"))
         {
+            knifeManager.SetActiveKnife();
             CanShoot = false;
             kniferb.isKinematic = true;
             kniferb.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -55,6 +57,7 @@ public class KnifeController : MonoBehaviour
     private void GetComponents()
     {
         kniferb = GetComponent<Rigidbody2D>();
+        knifeManager = GameObject.FindObjectOfType<KnifeManager>();
     }
 
 
