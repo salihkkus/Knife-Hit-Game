@@ -241,8 +241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415, y: 921.4}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -396, y: 926.68}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409459663
 MonoBehaviour:
@@ -291,8 +291,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -779,7 +779,7 @@ MonoBehaviour:
   knifeIconList: []
   knifePrefab: {fileID: 490337733267405575, guid: c5069e74220539a4ba69402e2ed61953, type: 3}
   knifeIconPrefab: {fileID: 4422423225644329200, guid: 7f2f0840ea1526044ab1180dc86cb9f2, type: 3}
-  knifeIconPosition: {x: -2.2, y: -4}
+  knifeIconPosition: {x: -2.3, y: -4}
   knifeCount: 10
   activeColor: {r: 0.6745283, g: 0.99387765, b: 1, a: 1}
   disableColor: {r: 0.12646851, g: 0.13207549, b: 0.13207549, a: 1}
