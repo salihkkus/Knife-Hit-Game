@@ -47,7 +47,7 @@ public class KnifeController : MonoBehaviour
 
         if(other.gameObject.CompareTag("Knife"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("MainScene");
         }
     }
 
