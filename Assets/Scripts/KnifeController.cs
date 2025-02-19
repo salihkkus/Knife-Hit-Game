@@ -29,8 +29,9 @@ public class KnifeController : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
            CanShoot = true;
+           knifeManager.SetDisableKnifeIconColor();
         }
-    }
+            }
 
     void OnCollisionEnter2D(Collision2D other)
     {

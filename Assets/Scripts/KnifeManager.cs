@@ -44,6 +44,11 @@ public class KnifeManager : MonoBehaviour
         }
     }
 
+    public void SetDisableKnifeIconColor()
+    {
+      knifeIconList[(knifeIconList.Count - 1) - knifeIndex].GetComponent<SpriteRenderer>().color = disableColor;
+    }
+
     public void SetActiveKnife()
     {
       if(knifeIndex < knifeCount - 1)
