@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Button startButton; // Butonu Inspector'dan bağlayacağız
+
     void Start()
     {
-        
+        startButton.onClick.AddListener(LoadGameScene);
     }
 
-    // Update is called once per frame
-    void Update()
+    void LoadGameScene()
     {
-        
+        SceneManager.LoadScene("MainScene"); // GameScene'e geçiş yap
     }
 }
