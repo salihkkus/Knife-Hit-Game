@@ -6,13 +6,19 @@ using UnityEngine;
 public class KnifeManager : MonoBehaviour
 {
   [SerializeField] private List<GameObject> knifeList = new List<GameObject>();
+  [SerializeField] private List<GameObject> knifeIconList = new List<GameObject>();
   [SerializeField] private GameObject knifePrefab;
+  [SerializeField] private GameObject knifeIconPrefab;
+  [SerializeField] private Vector2 knifeIconPosition;
   [SerializeField] private int knifeCount;
+  [SerializeField] private Color activeColor;
+  [SerializeField] private Color disableColor;
   private int knifeIndex = 0;
 
     void Start()
     {
         CreateKnife();
+        CreateKnifeIcons();        
     }
 
     private void CreateKnife()
@@ -25,6 +31,17 @@ public class KnifeManager : MonoBehaviour
         }
 
         knifeList[0].SetActive(true);
+    }
+
+    private void CreateKnifeIcons()
+    {
+      for(int i=0; i < knifeCount; i++)
+        {
+          GameObject newKnifeIcon = Instantiate(knifeIconPrefab , knifeIconPosition , knifeIconPrefab.transform.rotation);
+          newKnifeIcon.GetComponent<SpriteRenderer>().color = activeColor;
+          knifeIconPosition.y += 0.5f;
+          knifeIconList.Add(newKnifeIcon);          
+        }
     }
 
     public void SetActiveKnife()
