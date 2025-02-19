@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KnifeController : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class KnifeController : MonoBehaviour
             kniferb.isKinematic = true;
             kniferb.constraints = RigidbodyConstraints2D.FreezeAll;
             transform.SetParent(other.gameObject.transform);
+        }
+
+        if(other.gameObject.CompareTag("Knife"))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
