@@ -4,7 +4,9 @@
 Knife Hit is a simple yet addictive Unity game where the player tries to throw knives at a rotating circle without hitting other knives. 
 
 ## 📸 Screenshots
-*(You can add gameplay images here.)*
+![kh](https://github.com/user-attachments/assets/8a7ddf60-c21a-4fc7-a2dc-c50d3847c428)
+![kh1](https://github.com/user-attachments/assets/fe1d35dc-b62e-435c-b086-684fb660cfce)
+
 
 ## ⚙️ Features
 - Knife throwing mechanic towards a rotating circle
