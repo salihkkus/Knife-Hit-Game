@@ -38,8 +38,3 @@ If you want to contribute, please follow these steps:
 
 ## 📜 License
 This project is open-source and distributed under the MIT License.
-
----
-
-Would you like to add anything else to this README? You can also include gameplay images!
-
