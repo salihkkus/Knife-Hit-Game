@@ -11,7 +11,7 @@ public class CircleController : MonoBehaviour
         SetRotateCircle();
     }
 
-    private void SetRotateCircle()
+    private void SetRotateCircle()//,
     {
         transform.Rotate(Vector3.forward * RotateSpeed * Time.deltaTime);
     }
